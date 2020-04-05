@@ -1,0 +1,482 @@
+body{
+  margin: 0px;
+  background: url(assets/img/email-pattern.png);
+
+}
+
+div.logo img{
+  margin-bottom: 10%;
+  margin-top: -15%;  height:  40px;
+  width: 20%;
+  margin-top:1%;
+  margin-left: -5%;
+  margin-bottom: 10px;
+
+ position: fixed;
+
+}
+
+ul.nav.navbar-nav.navbar-right{
+  margin-top:12px;
+  margin-right:18px;
+float: right;
+ right: 0px;
+  position: fixed;
+  display: inline-block;
+}
+ul li a.menu{
+  float: left;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+  color:#363535;
+  background-color:#e7e7e7;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+  color:#dad9d9;
+  background-color:transparent;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color:#b8b6b6;
+}
+
+
+.navbar-brand, .navbar-nav > li > a{
+  text-shadow:0 1px 0 rgba(255,255,255,.25);
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a{
+  background-repeat:repeat-x;
+  -webkit-box-shadow:inset 0 3px 9px rgba(0,0,0,.075);
+  background:rgba(255, 255, 255, 0.3);
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color:#ddd;
+  background:white;
+}
+
+button.navbar-toggle.collapsed{
+  margin-top:17px;
+  margin-right:52px;
+}
+#navcol-1{
+  margin-top: -65px;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+nav.navbar.navbar-default{
+  height: 100px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-right: 75px;
+}
+
+.navbar-header a.navbar-brand img{
+  height: 30px;
+  margin-top: -4px;
+}
+
+.navbar-nav > li > a{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+i.glyphicon.glyphicon-search{
+  font-size: 20px;
+  color: rgb(184,182,182);
+}
+
+#background{
+  margin-top:65px;
+  background-size:cover;
+    height:620px;
+  margin-bottom: 20%;
+}
+
+#background .beranda{
+  background:none;
+  margin-left:137px;
+  max-width:1000px;
+  margin-top:22px;
+}
+
+#background .beranda h1{
+  font-family:nexa;
+  color:white;
+  margin-bottom:-12px;
+}
+
+
+#background .beranda{
+  size: 20px;
+  font-family: 'Baloo 2', cursive;
+  color:white;
+  margin-bottom:-12px;
+  margin-top:15px;
+  padding-right:20px;
+}
+
+
+#tentangkami{
+  text-align: center;
+}
+
+#tentangkami .container h1{
+  margin:36px;
+}
+
+#tentangkami .container .row{
+  margin:-3px;
+}
+
+#tentangkami .isi .container.atas{
+  background-color:#f9f8f8;
+  margin-top:-85px;
+  padding-bottom:37px;
+}
+
+.glyphicon{
+  position: relative;
+  font-size: 42px;
+  color: #27475e;
+}
+
+.container.bawah{
+  text-align: center;
+}
+
+#event{
+  margin-top: 31px;
+  background-color: #f9f8f8;
+  padding-top: 43px;
+  padding-bottom: 25px;
+}
+
+#gallery .container h1{
+  text-align: center;
+  font-family: raleway;
+  margin-bottom: 38px;
+}
+
+#gallery .container .row #dua.col-lg-6.col-md-6.col-sm-6.col-xs-6{
+  padding-top:31px;
+}
+
+#informasi{
+  background-color: #102128;
+  margin-top: 79px;
+  color: white;
+}
+
+#informasi .container{
+  width: 100%;
+  padding: 55px;
+}
+
+.container.footer .col-lg-6.col-md-6.col-sm-12.col-xs-12{
+  font-family:petitamedium;
+  color:#eee;
+}
+
+.input-group.input-group-lg{
+  margin-top:23px;
+}
+
+#icon{
+  color:white;
+  font-size:37px;
+  margin-top:20px;
+  position:static;
+}
+
+#icon i.fa.fa-facebook-official{
+  margin-left:17px;
+}
+
+#icon i.fa.fa-twitter-square{
+  margin-left:17px;
+}
+
+#icon i.fa.fa-youtube-play{
+  margin-left:17px;
+}
+
+#kaki{
+  padding-top: -60%;
+  color: rgb(40,78,94);
+  background-color: #0f1517;
+  margin-bottom: -100%; 
+}
+.carousel-item{
+  height: auto;
+}
+.carousel-item img{
+  margin-top: 35px;
+  margin-bottom: -8%;
+  height: auto;
+  margin-right: 5%;
+}
+.pendahuluan {
+  margin-bottom: 20%;
+  font-family: 'Baloo 2', cursive;
+}
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: .5s;}
+
+#nav.black{
+  background:rgba(118, 119, 122,.8);
+  height: 60px;
+}
+
+.home {
+  color: white;
+}
+#dropdownMenuLink{
+  margin-top: -22px;
+  padding: 6px 12px;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+.btn-transparent{
+  color: #b8b6b6;
+}
+.misi {
+  text-align: left;
+  float: left;
+}
+
+#visi{
+  font-size: 50px;
+  margin-bottom: -15px;
+  margin-top: -5px;
+}
+#misi{
+  font-size: 50px;
+  margin-bottom: -15px;
+  margin-top: -5px;
+}
+#kegiatan{
+  font-size: 50px;
+  margin-bottom: -15px;
+  margin-top: -5px;
+}
+#containerbawah{
+  margin-top: -175px;
+  margin-bottom: 300px;
+}
+#tentangitarsi{
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+
+}
+#itarsi{
+  width: 250%;
+  float: left;
+  margin-left: -60%;
+}
+#judultentangitarsi{
+  margin-left: 25%;
+}
+#gambaritarsi{
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+
+
+
+
+#containerlogo{
+  margin-top: -175px;
+  margin-bottom: 300px;
+}
+#filosofilogo{
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+
+}
+#logoitarsi{
+  width: 250%;
+  float: left;
+  margin-left: -60%;
+}
+#filosofilogoitarsi{
+  margin-left: 25%;
+}
+#gambaritarsi{
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.fa-instagram{
+  color:white;
+}
+
+.list-unstyled{
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.list-unstyled li{
+  margin: 5%;
+}
+#carouselExampleCaptions{
+  width: 70%;
+  margin-left: 28%;
+  margin-bottom: 50px;
+  margin-top: 2%;
+  height: 100%;
+}
+#slidenews{
+  width: 180%;
+  margin-bottom: 50%;
+}
+.containerslide{
+height: 380px;
+margin-top: 5%;
+}
+.carousel-indicators{
+  margin-bottom: 5%;
+}
+.mainevent{
+  color: black;
+  background: #fafafa;
+  border-left: 15px solid #88e8f2;
+}
+.listnews{
+  font-family: 'Baloo Da 2', cursive;
+  background-color: white;
+  margin-left: 20%;
+  margin-top: -10%;
+  width: 60%;
+  height: 500px;
+  overflow: auto;
+  border-top: 8px solid  #88e8f2;
+  border-bottom: 15px solid #88e8f2;
+}
+.pastevent{
+  font-family: 'Baloo Da 2', cursive;
+  text-align: center;
+  background-color: #88e8f2;
+  margin-top: -15%;
+  padding-bottom: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.containerpastevent{
+  font-family: 'Baloo Da 2', cursive;
+  padding-right: -100px;
+}
+h6{
+    display: inline;
+  margin-left: 10px;
+
+}
+.fa-thumbs-up:hover{
+  color: #97abe6;
+}
+.fa-thumbs-up:active{
+  color: blue;
+}
+.fa-thumbs-up{
+  color:black;
+}
+.fa-comment-dots{
+  color: black;
+}
+.fa-comment-dots:hover{
+  color: #97abe6;
+}
+.fa-comment-dots:active{
+  color: blue;
+}
+.listnews img{
+  width: 40%;
+  height: 20%;
+}
+.fa-instagram{
+  color:white;
+}
+.fa-instagram:hover{
+ color:#d5d9db;
+}
+.fa-instagram:active{
+ color:black;
+}
+.fa-camera{
+  font-size: 500%;
+ margin-left:50%;
+   margin-right: 50%;
+   margin-top: 6%;
+   margin-bottom: 3%;
+}
+.fa-youtube-play{
+color:white;
+}
+.fa-youtube-play:hover{
+color:#d5d9db;
+}
+.fa-youtube-play:active{
+color:black;
+}
+.fa-map-marked-alt{
+  font-size: 500%;
+ margin-left:50%;
+   margin-right: 50%;
+   margin-top: 3%;
+   margin-bottom: 3%;
+ }
+
+.containerpeta{
+  margin-top: 6%;
+  margin-bottom: -7%;
+}
+.fa-phone-alt{
+  font-size: 500%;
+ margin-left:50%;
+   margin-right: 50%;
+   margin-top: 3%;
+   margin-bottom: 3%;
+}
+.fa-sitemap{
+  font-size: 500%;
+ margin-left:50%;
+   margin-right: 50%;
+   margin-top: 3%;
+   margin-bottom: 6%;
+ }
+.tombolkontak{
+  width: 100%;
+
+}
+#tombolkontak{
+  margin-top: 5%;
+}
+#telf{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+
+} 
+.telf{
+  font-size: 30px;
+  text-decoration: none;
+} 
+
