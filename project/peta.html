@@ -14,61 +14,84 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ITARSI STMKG-ITARSI Fair 2020</title>
-   <script
-  src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script type="text/javascript">
-    $(window).on('scroll',function(){if ($(window).scrollTop()){
-        $('nav').addClass('black');
-    }
-    else
-    {
-      $('nav').removeClass('black');
-    }
-  }) 
+  <title>MAPS-ITARSI Fair 2020</title>
+     <link rel="shortcut icon" href="Assets/Img/title3-img.ico">
+         <script src="https://code.jquery.com/jquery-3.4.1.js">
+         </script>
+          <script type="text/javascript">
+            $(window).on('scroll',function(){if ($(window).scrollTop()){
+                $('nav').addClass('black');
+                 }
+            else
+               {
+                $('nav').removeClass('black');
+               }
+              }) 
+            $(document).ready(function(){$(".menu h4").click(function(){
+                $("nav ul").toggleClass("active")
+            })
+          })
+
   </script>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/news.css">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
   
 </head>
 
 <body>
-  <!-- navbar -->  
-  <nav class="navbar navbar-default navbar-static-top" id="nav">
-    <div class="container" id="navbar">
-
-      <div class="navbar-header">
-        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      </div> 
-
-      <div class="collapse navbar-collapse" id="navcol-1">
-<div class="logo"><img src="assets/img/header-img.png"></div>
-    <ul class="nav navbar-nav navbar-right"> 
-         
-          <li><a href="index.html" class="home"><i class="fas fa-home"></i></a></li>  
-          <li role="presentation"><a class="menu"  href="#containerbawah"><i class="fas fa-address-card"></i> TENTANG KAMI </a></li> 
-          <li role="presentation"><a class="menu" ><div class="dropdown" >
-  <a class="btn btn-transparent dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-calendar-alt"></i> EVENT <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="event.html#background">Main Event</a>
-    <a class="dropdown-item" href="event.html#pastevent">Past Event</a>
-    <a class="dropdown-item" href="opdis.html">Open Discussion</a>
-  </div></a>
-</div></a></li>
-          <li role="presentation"><a class="menu" href="#gallery"><i class="fas fa-image"></i> GALERI
-</a></li>
-          <li role="presentation"><a class="menu" ><div class="dropdown">
-  <a class="btn btn-transparent dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-info-circle"></i> INFORMASI <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Formulir dan Database</a>
-    <a class="dropdown-item" href="#">Form Jadwal <br>Sidang Proposal <br>Instrumentasi 2015</a>
-    <a class="dropdown-item" href="#">Jadwal Sidang <br>Proposal <br>Instrumentasi 2015</a>
-  </div>
-</a></li>
-          
-        </ul>
+    <!-- navbar -->  
+  
+<div class="responsive-bar">
+  <div class="logo">
+      <img src="assets/img/header-img.png">
     </div>
-  </nav>
+    <div class="menu"><h4> MENU </h4></div>
+</div>
+
+  <nav>
+    <div class="logo">
+      <img src="assets/img/header-img.png"> </div>
+  <ul class="active">
+     <li><a href="index.html" class="home"data-toggle="tooltip" data-placement="bottom" title="home"><i class="fas fa-home"></i></a></li>
+     <li role="presentation"><a class="menu"  href="tentangkami.html"data-toggle="tooltip" data-placement="bottom" title="tentang kami"><i class="fas fa-address-card"></i> TENTANG KAMI </a></li> 
+    <li> <a data-toggle="tooltip" data-placement="bottom" title="lihat event"><i class="fas fa-calendar-alt"></i> EVENT </a><div><ul><div>
+      
+      <li><a class="submenu1" href="event.html#background">MAIN EVENT</a></li>
+      <li><a class="submenu1" href="event.html#pastevent">PAST EVENT</a></li>
+      <li><a class="submenu1" href="opdis.html">OPEN DISCUSSION</a></li>
+    </div>
+    </ul></div>
+  </li>
+    <li> <a data-toggle="tooltip" data-placement="bottom" title="akademik"><i class="fas fa-book"></i> AKADEMIK </a><div><ul><div>
+      
+      <li><a class="submenu1" href="tingkatmodul.html">MODUL</a></li>
+      <li><a class="submenu1" href="#">KALENDER AKADEMIK</a></li>
+      <li><a class="submenu1" href="#" data-toggle="modal" data-target="#exampleModalLong" >DISKUSI</a></li>
+    </div>
+    </ul></div>
+  </li>
+    <li><a href="galeri.html" data-toggle="tooltip" data-placement="bottom" title="masuk ke galeri"><i class="fas fa-image"></i> GALERI</a></li>
+    <li> <a data-toggle="tooltip" data-placement="bottom" title="informasi"><i class="fas fa-info-circle"></i> INFORMASI </a><div><ul><div>
+      
+      <li><a class="submenu1" href="#">Formulir dan Database</a></li>
+      <li><a class="submenu1" href="#">Form Jadwal Sidang Proposal Instrumentasi </a></li>
+    
+    </div>
+    </ul></div>
+  </li>
+<li>
+   <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+   
+  </form>
+</li>
+ 
+  </ul>
+
+</div>
+</nav>
  
   <!-- navbar -->
 <div class="containerpeta">
@@ -76,7 +99,7 @@
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3965.994771484161!2d106.746476614361!3d-6.264416663071619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1586014753955!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
 </div></div>
 <div class="p-3 mb-2 bg-info text-white"><i class="fas fa-map-marker-alt"></i> <strong> Alamat Ikatan Taruna Instrumentasi STMKG (ITARSI) :  </strong> Jl. Perhubungan I No. 5, Pondok Betung, Pondok Aren, Pd. Betung, Tangerang Selatan, Kota Tangerang Selatan, Banten 15221</div>
-  <!-- about -->
+    <!-- about -->
   <div id="informasi">
     <div class="container footer">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -89,15 +112,28 @@
           <div class="input-group input-group-lg">
             <input type="text" class="form-control" value="Tulis">
             <div class="input-group-btn">
-              <button class="btn btn-info" type="submit"><i class="fas fa-search"></i>Cari </button>
+              <button class="btn" type="submit"><i class="fas fa-search"></i>Cari </button>
             </div>
           </div>
-         <div id="icon"><a href="https://www.instagram.com/itarsi.stmkg/?hl=id"><i class="fab fa-instagram"></i> </a></i><a href="https://www.youtube.com/channel/UC6QMFfmfaMbI94MlqP4w8uw"><i class="fa fa-youtube-play"></i></a></div>
-        </div>
+           
+      <a class="btn1" data-toggle="modal" data-target="#exampleModalLong">
+       <i class="fas fa-envelope"></i>
+      </a>
+      <a class="btn1" href="https://www.instagram.com/itarsi.stmkg/?hl=id">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="btn1" href="https://www.youtube.com/channel/UC6QMFfmfaMbI94MlqP4w8uw">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a class="btn1" >
+        <i class="fas fa-phone"></i>
+      </a>
+     
+
+        
         <!-- Button trigger modal -->
-<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalLong"><i class="fas fa-envelope"></i>
-   HUBUNGI KAMI
-</button><a class="telf">   / CP </a> <a id="telf" href=" 081218293019" class="text-white bg-dark">  081218293019</a>
+<div class="middle"><a data-toggle="modal" data-target="#exampleModalLong" class="btn"><i class="fas fa-envelope"></i> HUBUNGI KAMI</a></div>
+ 
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -126,8 +162,8 @@
         </form>
       </div>
        <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-transparent" data-dismiss="modal"><i class="modal1">Close</i></button>
+        <button font-color="blue" type="button" class="btn btn-transparent"><i class="modal2">Save changes</i></button>
       </div>
     </div>
   </div>
@@ -139,6 +175,32 @@
   </div>
 
   <!-- about -->
+
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  <!-- jumbotron -->
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+  <!-- kaki -->
+  <div id="kaki">
+    <div class="container">
+      <h5 class="text-center">Copyright © ITARSI Fair 2020 Instrumentasi 4B</h5>
+    </div>
+  </div>
+  <!-- kaki -->
 
   <!-- kaki -->
   <div id="kaki">
