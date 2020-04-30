@@ -1,0 +1,433 @@
+body{
+	margin :0;
+	padding :0;
+	font-family: sans-serif;
+
+}
+nav{
+	position: fixed;
+	top :0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .5s;
+	z-index: 20;
+}
+nav.logo{
+	float: left;
+}
+nav.logo img{
+	height: 35px;
+	transition: .5s;
+}
+nav ul{
+
+	float: right;
+	margin: 0;
+	padding: 0;
+	display :flex;
+}
+nav ul li{
+	margin-top: -40px;
+	list-style:none;
+}
+nav ul li a{
+	line-height:-30px;
+	color: #b5b5b5;
+	padding: 5px 20px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+}
+
+nav.black ul li a{
+color:#fff;
+line-height: 60px;
+}
+nav ul li a.active,
+nav ul li a:hover{
+	color: #fff;
+	background: #1a999c;
+	text-decoration: none;
+}
+
+section.sec1{
+	margin-bottom: 200px;
+	margin-top: 0px;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+	z-index: 10;
+}
+
+div.centertext{
+	margin-bottom: 0px;
+	padding-bottom: -300px;
+	margin-top: 0%;
+	padding-top: 0%;
+	width: 100%;
+	height: 1000px;
+	background-size: cover;
+	position: relative;
+	z-index: 10;
+
+}
+.centertext img{
+	height: 800px;
+
+}
+
+.centertext div#intro{
+	
+   width: 75%;
+    margin: 300px auto;
+  	margin-left: 12%;
+	position: absolute;
+}
+.centertext div#intro h1{
+
+font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    animation: textanimation 13s ease-in-out;
+
+}
+.centertext div#intro h2{
+
+font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    animation: textanimation2 10s ease-in-out;
+    opacity: 70%;
+
+}
+
+nav.black{
+	background: rgba(0,0,0,.6);
+	height: 80px;
+	padding: 10px 50px;
+
+}
+nav.black .logo img{
+	height: 60px;
+	position: relative;
+}
+
+nav ul li {
+	color: #b4b9c2;
+}
+.form-inline input{
+	background-color: transparent;
+}
+.btn-outline-success{
+	width: 10px;
+}
+
+nav ul li ul{
+
+	display: none;
+}
+nav ul li:hover ul{
+	margin-top: 30px;
+	height: 200px;
+	display: block;
+	background-color:rgba(0,0,0,.6);
+
+}
+nav ul li:hover ul div{
+	margin-top: 5px;
+	height: px;
+	display: block;	
+
+}
+nav ul li:hover ul li{
+	margin-top: 10px;
+	display: block;
+}
+
+
+.responsive-bar{
+	display: none;
+
+
+}
+@media(max-width: 768px){
+	.responsive-bar{
+	display: block;
+	width: 100%;
+	height: 60px;
+	background: rgba(0,0,0,.8); 
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 5px 20px;
+	box-sizing: border-box;
+	z-index: 22;
+}
+.responsive-bar .logo img{
+	float: left;
+	height: 50px;
+
+}
+.responsive-bar .menu h4{
+	float: right;
+	color: #fff;
+	margin:0;
+	padding: 0;
+	line-height: 50px;
+	cursor: pointer;
+	text-transform: uppercase;
+
+}
+nav.black{
+	background: #262626;
+	height: 60px;
+	padding: 0;
+}
+nav .logo{
+	display: block;
+}
+ nav ul{
+ 	position: absolute;
+ 	margin-top: 0%;
+ 	width: 100%;
+ 	top: 60px;
+ 	left: 0;
+ 	background: #262626;
+ 	float: none;
+ 	display: none;
+ }
+
+ nav ul.active{
+ 	display: block;
+ 		z-index: 22;
+ }
+
+ nav ul li{
+ 	width: 100%;
+ 	margin-top: 10px;
+ }
+  nav ul li a{
+ 	display: block;
+ 	padding: 0;
+ 	width: 100%;
+ 	text-align: center;
+ 	line-height: 30px !important;
+ 	color: #fff;
+ }
+ nav ul li ul{
+	display: none;
+}
+.form-inline{
+display: block;
+ 	padding: 0;
+ 	width: 100%;
+ 	text-align: center;
+ 	line-height: 30px !important;
+ 	color: #fff;
+}
+nav ul li:hover ul{
+	margin-top: 30px;
+	height: 180px;
+	display: block;
+	background-color:rgba(0,0,0,.9);
+}
+nav ul li:hover ul div{
+	margin-top: 30px;
+	height: 180px;
+	display: block;	
+}
+nav ul li:hover ul li{
+	margin-top: 10px;
+	display: block;
+}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body {
+    background: #000;
+}
+
+
+
+@keyframes textanimation {
+    0% {
+        letter-spacing: 25px;
+    }
+    100% {
+        letter-spacing: 10px;
+    }
+}
+
+#intro p {
+    text-align: center;
+    font-size: 30px;
+    color: #ff0000;
+    font-weight: bold;
+    animation: textanimation2 0.5s ease-in-out;
+}
+
+@keyframes textanimation2 {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.footer-wrapper{
+	display: block;
+	width: 1100px;
+
+	margin:0 auto;
+}
+.single-footer {
+	width: 33%;
+	float: left;
+	text-align: left;
+	color: #fff;
+
+}
+.single-footer ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.single-footer ul a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+}
+.single-footer p{
+	width: 100%;
+}
+footer{
+	
+	width: 100%;
+	height: 200px;
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+	display: flex;
+	background-color: #262626;
+}
+
+#kaki{
+	width: 150%;
+  color: rgb(40,78,94);
+  background-color: #0f1517;
+  position: fixed;
+	bottom: -10px;
+	z-index: 1;
+	display: flex;
+	margin-left: -125px;
+	height: auto;
+}
+ h5{
+	margin-left: 30%;
+}
+
+
+
+section:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 390px;
+	background: linear-gradient(#000,transparent);
+	z-index: 20;
+}
+
+img#logo{
+	margin-top: 10px;
+	height: 100px;
+}
+.sci
+{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+	padding: 0;
+	z-index: 25;
+}
+.sci li
+{
+	background: #fff;
+	padding: 15px;
+	list-style: none;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.sci li:last-child
+{
+	border-bottom: none;
+}
+.sci li:hover
+{
+	background: #000;
+}
+.sci li:hover img
+{
+	filter: invert(1);
+}
+#intro p button {
+	z-index: 25;
+}
+.btn{
+	position: relative;
+	display: block;
+	color: white;
+	font-size: 14px;
+	font-family: ;
+	text-decoration: none;
+	margin: 30px 0;
+	border: 2px solid #1a999c;
+	padding: 14px 60px;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 1s all ease;
+	z-index: 25;
+
+}
+.btn::before{
+	background: #1a999c;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+	transition: all 0.6s ease;
+}
+.btn::before{
+	width:0;
+	height: 100%;
+}
+.btn:hover::before{
+width: 100%;
+color: white;
+}
+.middle{
+	position: absolute;
+	margin-top: 150px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
